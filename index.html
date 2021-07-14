@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sorveteria Gellato</title>
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/navegacao.css">
+  <link rel="stylesheet" href="./css/menu.css">
+  <link rel="stylesheet" href="./css/pedido.css">
+</head>
+
+<body>
+
+  <div class="caixa">
+    <header class="navegacao-caixa">
+      <div class="navegacao">
+        <img src="/recursos/imagens/nave.png">
+        <a src= "www.naoexiste.com.br">Sobre</a>
+      </div>
+    </header>
+
+    <main class="menu">
+      <div class="menu-caixa">
+        <div class="menu-header">
+          <h1 class="menu-header-titulo"><span class="font-ligth">Cardápio</span></h1>
+          <ul class="menu-itens">
+
+            <li>
+              <a class="item-menu ativo" data-categorias="all" href="#">
+                <div class="item-img">
+                  <img src="/recursos/icones/tudo.svg" alt="">
+                </div>
+                <span class="item-titulo">Todos</span>
+              </a>
+            </li>
+
+            <li>
+              <a class="item-menu" data-categorias="massa" href="#">
+                <div class="item-img">
+                  <img src="/recursos/icones/massa.svg" alt="">
+                </div>
+                <span class="item-titulo">massa</span>
+              </a>
+            </li>
+
+            <li>
+              <a class="item-menu" data-categorias="italiano" href="#">
+                <div class="item-img">
+                  <img src="/recursos/icones/italiano.svg" alt="">
+                </div>
+                <span class="item-titulo">italiano</span>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+        <section class="menu-conteudo">
+          <h2 class="conteudo-titulo"> <span class="font-ligth">Pedido</span></h2>
+
+          <ul class="menu-lista">
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <section class="pedido">
+      <img class="cesta" src="/recursos/icones/cesta.svg">
+      <ul class="pedido-lista"></ul>
+        <div class="pedido-cobrar">
+          <spam class="pedido-preco" id="total"></spam>
+          <spam class="pedido-delivery"></spam>
+          <button id="pedido-terminar" class="pedido-terminar">Finalizar Pedido</button>
+        </div>
+    </section>
+  </div>
+  <script type="module" src="./script/menu.js" defer></script>
+  <script type="module" src="./script/pedido.js" defer></script>
+</body>
+</html>
